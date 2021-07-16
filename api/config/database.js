@@ -1,4 +1,4 @@
 module.exports = {
   secret: "wrapper-mlc",
-  database: "mongodb://localhost:27017/local",
+  database: process.env.MONGODB_URL || "mongodb://localhost:27017/local",
 };
